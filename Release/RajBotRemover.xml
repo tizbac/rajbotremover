@@ -1,0 +1,144 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+RajBotRemover
+</name>
+</assembly>
+<members>
+<member name="F:WindowsApplication1.ResolveLNK.SLGP_FLAGS.SLGP_SHORTPATH">
+	<summary>Retrieves the standard short (8.3 format) file name</summary>
+</member><member name="F:WindowsApplication1.ResolveLNK.SLGP_FLAGS.SLGP_UNCPRIORITY">
+	<summary>Retrieves the Universal Naming Convention (UNC) path name of the file</summary>
+</member><member name="F:WindowsApplication1.ResolveLNK.SLGP_FLAGS.SLGP_RAWPATH">
+	<summary>Retrieves the raw path name. A raw path is something that might not exist and may include environment variables that need to be expanded</summary>
+</member><member name="F:WindowsApplication1.ResolveLNK.SLR_FLAGS.SLR_NO_UI">
+	<summary>
+ Do not display a dialog box if the link cannot be resolved. When SLR_NO_UI is set,
+ the high-order word of fFlags can be set to a time-out value that specifies the
+ maximum amount of time to be spent resolving the link. The function returns if the
+ link cannot be resolved within the time-out duration. If the high-order word is set
+ to zero, the time-out duration will be set to the default value of 3,000 milliseconds
+ (3 seconds). To specify a value, set the high word of fFlags to the desired time-out
+ duration, in milliseconds.
+ </summary>
+</member><member name="F:WindowsApplication1.ResolveLNK.SLR_FLAGS.SLR_ANY_MATCH">
+	<summary>Obsolete and no longer used</summary>
+</member><member name="F:WindowsApplication1.ResolveLNK.SLR_FLAGS.SLR_UPDATE">
+	<summary>If the link object has changed, update its path and list of identifiers.
+ If SLR_UPDATE is set, you do not need to call IPersistFile::IsDirty to determine
+ whether or not the link object has changed.</summary>
+</member><member name="F:WindowsApplication1.ResolveLNK.SLR_FLAGS.SLR_NOUPDATE">
+	<summary>Do not update the link information</summary>
+</member><member name="F:WindowsApplication1.ResolveLNK.SLR_FLAGS.SLR_NOSEARCH">
+	<summary>Do not execute the search heuristics</summary>
+</member><member name="F:WindowsApplication1.ResolveLNK.SLR_FLAGS.SLR_NOTRACK">
+	<summary>Do not use distributed link tracking</summary>
+</member><member name="F:WindowsApplication1.ResolveLNK.SLR_FLAGS.SLR_NOLINKINFO">
+	<summary>Disable distributed link tracking. By default, distributed link tracking tracks
+ removable media across multiple devices based on the volume name. It also uses the
+ Universal Naming Convention (UNC) path to track remote file systems whose drive letter
+ has changed. Setting SLR_NOLINKINFO disables both types of tracking.</summary>
+</member><member name="F:WindowsApplication1.ResolveLNK.SLR_FLAGS.SLR_INVOKE_MSI">
+	<summary>Call the Microsoft Windows Installer</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.GetPath(System.Text.StringBuilder,System.Int32,WindowsApplication1.ResolveLNK.WIN32_FIND_DATAW@,WindowsApplication1.ResolveLNK.SLGP_FLAGS)">
+	<summary>Retrieves the path and file name of a Shell link object</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.GetIDList(System.IntPtr@)">
+	<summary>Retrieves the list of item identifiers for a Shell link object</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.SetIDList(System.IntPtr)">
+	<summary>Sets the pointer to an item identifier list (PIDL) for a Shell link object.</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.GetDescription(System.Text.StringBuilder,System.Int32)">
+	<summary>Retrieves the description string for a Shell link object</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.SetDescription(System.String)">
+	<summary>Sets the description for a Shell link object. The description can be any application-defined string</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.GetWorkingDirectory(System.Text.StringBuilder,System.Int32)">
+	<summary>Retrieves the name of the working directory for a Shell link object</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.SetWorkingDirectory(System.String)">
+	<summary>Sets the name of the working directory for a Shell link object</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.GetArguments(System.Text.StringBuilder,System.Int32)">
+	<summary>Retrieves the command-line arguments associated with a Shell link object</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.SetArguments(System.String)">
+	<summary>Sets the command-line arguments for a Shell link object</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.GetHotkey(System.Int16@)">
+	<summary>Retrieves the hot key for a Shell link object</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.SetHotkey(System.Int16)">
+	<summary>Sets a hot key for a Shell link object</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.GetShowCmd(System.Int32@)">
+	<summary>Retrieves the show command for a Shell link object</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.SetShowCmd(System.Int32)">
+	<summary>Sets the show command for a Shell link object. The show command sets the initial show state of the window.</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.GetIconLocation(System.Text.StringBuilder,System.Int32,System.Int32@)">
+	<summary>Retrieves the location (path and index) of the icon for a Shell link object</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.SetIconLocation(System.String,System.Int32)">
+	<summary>Sets the location (path and index) of the icon for a Shell link object</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.SetRelativePath(System.String,System.Int32)">
+	<summary>Sets the relative path to the Shell link object</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.Resolve(System.IntPtr,WindowsApplication1.ResolveLNK.SLR_FLAGS)">
+	<summary>Attempts to find the target of a Shell link, even if it has been moved or renamed</summary>
+</member><member name="M:WindowsApplication1.ResolveLNK.IShellLinkW.SetPath(System.String)">
+	<summary>Sets the path and file name of a Shell link object</summary>
+</member><member name="T:WindowsApplication1.ResolveLNK.IShellLinkW">
+	<summary>The IShellLink interface allows Shell links to be created, modified, and resolved</summary>
+</member><member name="T:WindowsApplication1.RegistryOwnership.SE_OBJECT_TYPE">
+	<remarks></remarks>
+</member><member name="T:WindowsApplication1.RegistryOwnership.SECURITY_INFORMATION">
+	<remarks></remarks>
+</member><member name="T:WindowsApplication1.RegistryOwnership.LUID">
+	<remarks></remarks>
+</member><member name="T:WindowsApplication1.RegistryOwnership.LUID_AND_ATTRIBUTES">
+	<remarks></remarks>
+</member><member name="T:WindowsApplication1.RegistryOwnership.TOKEN_PRIVILEGES">
+	<remarks>Adjust SizeConst for uses beyond original design</remarks>
+</member><member name="M:WindowsApplication1.RegistryOwnership.LookupPrivilegeValue(System.String,System.String,WindowsApplication1.RegistryOwnership.LUID@)">
+	<param name="lpSystemName">The system to find the privilege for. Use Nothing for the local computer.</param>
+	<param name="lpName">The name of the privilege to lookup</param>
+	<param name="lpLuid">OUT: LUID structure</param>
+	<returns>True for success; false for failure. Use Marshal.GetLastWin32Error to determine error code.</returns>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.RegistryOwnership.AdjustTokenPrivileges(System.IntPtr,System.Boolean,WindowsApplication1.RegistryOwnership.TOKEN_PRIVILEGES@,System.Int32,WindowsApplication1.RegistryOwnership.TOKEN_PRIVILEGES@,System.IntPtr@)">
+	<param name="TokenHandle">Handle to the user token</param>
+	<param name="DisableAllPrivileges">True to disable all privileges.</param>
+	<param name="NewState">TOKEN_PRIVILEGES structure with desired privilege set.</param>
+	<param name="BufferLength">Size of the structure that will be passed in the PreviousState parameter.</param>
+	<param name="PreviousState">TOKEN_PRIVILEGES structure to hold the user's privileges as they were prior to
+ this function call.</param>
+	<param name="ReturnLength">OUT: The size of the PreviousState variable after the function runs, or in the event
+ of an error, the minimum size that the PreviousState variable should have been.</param>
+	<returns>0 for success, a non-zero error code that can initialize a new Win32Exception for errorchecking.</returns>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.RegistryOwnership.SetNamedSecurityInfo(System.String,WindowsApplication1.RegistryOwnership.SE_OBJECT_TYPE,WindowsApplication1.RegistryOwnership.SECURITY_INFORMATION,System.Byte[],System.IntPtr,System.IntPtr,System.IntPtr)">
+	<param name="pObjectName">Name of the object.</param>
+	<param name="ObjectType">Type of the object</param>
+	<param name="SecurityInfo">Flag indicating which security item(s) will be modified.</param>
+	<param name="psidOwner">SID of the new owner, if ownership is changing.</param>
+	<param name="psidGroup">SID of the object's primary group, if it is changing.</param>
+	<param name="pDacl">Discretionary access list to be set on the object, if it is changing.</param>
+	<param name="pSacl">Security access list to be set on the object, if it is changing.</param>
+	<returns>0 for success, a non-zero error code that can initialize a new Win32Exception for errorchecking.</returns>
+	<remarks></remarks>
+</member><member name="T:WindowsApplication1.RegistryOwnership.BaseKeySelector">
+	<remarks>.Net functions typically use the HKEY_ prefix while the SetNamedSecurityInfo used here does not, so this
+ can help avoid confusion.
+ </remarks>
+</member><member name="M:WindowsApplication1.RegistryOwnership.SeizeRegistryKey(WindowsApplication1.RegistryOwnership.BaseKeySelector,System.String@,System.String@)">
+	<param name="RegistryBaseKeyName">An enumerator that indicates which registry base key to work with.</param>
+	<param name="RegistrySubKeyName">Subkey to use. Format example: "Software\MyApplication\MyKey"</param>
+	<param name="ErrorMessage">This string will be populated with any error conditions that the function traps.</param>
+	<returns>True if the function succeeed. If False, check the value of ErrorMessage.</returns>
+	<remarks></remarks>
+</member><member name="P:WindowsApplication1.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:WindowsApplication1.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:WindowsApplication1.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
